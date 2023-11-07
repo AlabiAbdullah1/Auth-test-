@@ -1,0 +1,11 @@
+To signup a user using jwt:
+1. configure our jwt:
+const maxAge= 3*24*60*60;(set the maximum time it will take our created token to expire)
+Then create token:
+const token= (id)=>{
+    it will return jwt:
+    return jwt.sign(token, 'our password for jwt', {
+        expiresIn: maxAge, 
+        httpsOnly: true
+    })
+}
